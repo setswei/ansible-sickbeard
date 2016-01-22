@@ -51,7 +51,7 @@
   - name: Deploy SickBeard init.d script
     template: dest=/etc/init.d/sickbeard
               src=sickbeard.init.d.j2
-              owner=root group=root mode=644
+              owner=root group=root mode=755
 
   # Ensure Sickbeard service is enabled/running
   - name: Ensure SickBeard service is running and enabled on boot
