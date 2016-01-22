@@ -3,13 +3,12 @@
   # Ensure Service User account Exists
   - name: Ensure SickBeard service user exists
     user: name={{ sickbeard_user_name }}
-          home={{ sickbeard_user_home }}
           createhome=yes
           state=present
 
   # Check/Install Dependencies for Sickbeard
   - name: Ensure SickBeard dependencies are installed
-    pkgin: name={{ item }} state=present
+    apt: name={{ item }} state=present
     with_items:
       - git
       - python
@@ -17,14 +16,14 @@
   
   # Create Sickbeard Program Directory 
   - name: Ensure SickBeard program directory exists
-    file: dest={{ sickbeard_user_home }}
+    file: dest={{ sickbeard_binary_path }}
           owner={{ sickbeard_user_name }}
           group={{ sickbeard_group_name }}
           recurse=yes state=directory
 
   # Create Sickbeard Data Directory
   - name: Ensure SickBeard config directory exists
-    file: dest={{ sickbeard_conf_path }}
+    file: dest={{ sickbeard_data_path }}
           owner={{ sickbeard_user_name }}
           group={{ sickbeard_group_name }}
           recurse=yes state=directory
