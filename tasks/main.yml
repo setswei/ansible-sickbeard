@@ -45,13 +45,13 @@
   # Deploy Sickbeard Default file for init.d
   - name: Deploy SickBeard Default file for init
     template: dest=/etc/default/sickbeard
-              src=sickbeard.ubuntu.default.j2
+              src=sickbeard.default.j2
               owner=root group=root mode=755
 
   # Deploy Init.d File for sickbeard  
   - name: Deploy SickBeard init.d script
     template: dest=/etc/init.d/sickbeard
-              src=sickbeard.ubuntu.init.d.j2
+              src=sickbeard.init.d.j2
               owner=root group=root mode=644
 
   # Ensure Sickbeard service is enabled/running
