@@ -4,8 +4,8 @@ sickbeard_user_name: sickbeard
 sickbeard_group_name: sickbeard
 
 # SickBeard paths
-sickbeard_data_path: /var/{{ sickbeard_user_home }}
-sickbeard_binary_path: /opt/{{ sickbeard_user_home }}
+sickbeard_data_path: /var/{{ sickbeard_user_name }}
+sickbeard_binary_path: /opt/{{ sickbeard_user_name }}
 
 # SickBeard service properties
 sickbeard_port: 8081
