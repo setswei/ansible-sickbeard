@@ -1,6 +1,6 @@
 ---
 galaxy_info:
-  author: Calum MacRae
+  author: Kyle Hartigan
   description: Deploy SickBeard, a PVR for newsgroup users
   #company: your company (optional)
   # Some suggested licenses:
@@ -65,7 +65,7 @@ galaxy_info:
   #  - 9.1
   #  - 9.1
   #  - 9.2
-  #- name: Ubuntu
+  - name: Ubuntu
   #  versions:
   #  - all
   #  - lucid
@@ -97,9 +97,9 @@ galaxy_info:
   #  - lenny
   #  - squeeze
   #  - wheezy
-  - name: SmartOS
-    versions:
-    - all
+  #- name: SmartOS
+  #  versions:
+  #  - all
   #
   # Below are all categories currently available. Just as with
   # the platforms above, uncomment those that apply to your role.

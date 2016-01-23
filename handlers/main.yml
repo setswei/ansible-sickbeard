@@ -3,5 +3,8 @@
 - name: restart sickbeard
   service: name=sickbeard state=restarted
 
-- name: import sickbeard service
-  command: /usr/sbin/svccfg import /opt/local/lib/svc/manifest/sickbeard.xml
+- name: start sickbeard
+  service: name=sickbeard state=started
+
+- name: stop sickbeard
+  service: name=sickbeard state=stopped
