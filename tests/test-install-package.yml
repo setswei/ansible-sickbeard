@@ -4,7 +4,7 @@
   vars:
     sickbeard_user_name: neofire
     sickbeard_group_name: neofire
-    sickbeard_data_location: /home/neofire/.sabnzbd
+    sickbeard_data_location: /home/neofire/.sickbeard
     sickbeard_port_no: "8081"
 
   roles:
