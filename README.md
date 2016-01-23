@@ -1,6 +1,6 @@
 SickBeard
 ===========
-[![Build Status](https://travis-ci.org/setswei/ansible-sabnzbd.svg?branch=master)](https://travis-ci.org/setswei/ansible-sickbeard) ![Build Status](http://bamboo.cybercrysis.net.au/plugins/servlet/wittified/build-status/SVR-ANSAB)
+[![Build Status](https://travis-ci.org/setswei/ansible-sickbeard.svg?branch=master)](https://travis-ci.org/setswei/ansible-sickbeard) ![Build Status](http://bamboo.cybercrysis.net.au/plugins/servlet/wittified/build-status/SVR-ANSAB)
 
 This role deploys [SickBeard](http://sickbeard.com), a PVR for newsgroup users.
 
